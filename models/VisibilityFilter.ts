@@ -17,3 +17,8 @@ export const VisibilityFilters: Record<string, VisibilityFilter> = {
     displayName: "Active",
   },
 }
+
+export type VisibilityFilterActions = {
+  clearCompletedTodos: () => void
+  setVisibilityFilter: (filter: VisibilityFilter) => void
+}
