@@ -3,7 +3,7 @@ import { KeyboardEvent, ChangeEvent, useState } from "react"
 
 type TodoTextInputProps = {
   onSave: (text: string) => void
-  text: string
+  text?: string
   placeholder?: string
   editing?: boolean
   newTodo?: boolean
