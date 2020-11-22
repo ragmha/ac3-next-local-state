@@ -1,12 +1,11 @@
 import classnames from "classnames"
-import { ReactChildren } from "react"
+import { FC } from "react"
 
 type LinkProps = {
   setFilter: () => void
   active: boolean
-  children: ReactChildren
 }
-export const Link = (props: LinkProps) => {
+export const Link: FC<LinkProps> = (props) => {
   const anchorClassName = classnames({ selected: props.active })
   return (
     <a
