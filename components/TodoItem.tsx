@@ -2,13 +2,11 @@ import { useState } from "react"
 import classnames from "classnames"
 
 import TodoTextInput from "./TodoTextInput"
+import { Todo, TodoActions } from "models/Todo"
 
 type TodoItemProps = {
-  todo: { id: number; text: string; completed: boolean }
-  editTodo: (id: number, text: string) => void
-  deleteTodo: (id: number) => void
-  completeTodo: (id: number) => void
-}
+  todo: Todo
+} & TodoActions
 
 export const TodoItem = (props: TodoItemProps) => {
   const [editing, setEditing] = useState(false)
