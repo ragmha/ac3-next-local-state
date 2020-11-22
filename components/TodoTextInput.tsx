@@ -4,9 +4,9 @@ import { KeyboardEvent, ChangeEvent, useState } from "react"
 type TodoTextInputProps = {
   onSave: (text: string) => void
   text: string
-  placeholder: string
-  editing: boolean
-  newTodo: boolean
+  placeholder?: string
+  editing?: boolean
+  newTodo?: boolean
 }
 
 export const TodoTextInput = (props: TodoTextInputProps) => {
