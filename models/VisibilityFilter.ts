@@ -3,7 +3,7 @@ export type VisibilityFilter = {
   displayName: string
 }
 
-export const VisibilityFilters: Record<string, VisibilityFilter> = {
+export const VisibilityFilters = {
   SHOW_ALL: {
     id: "show_all",
     displayName: "All",

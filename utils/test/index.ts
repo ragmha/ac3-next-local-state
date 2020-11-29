@@ -1,8 +1,8 @@
-import '@testing-library/jest-dom'
-import { configure } from '@testing-library/react'
-import '../testServer'
+import "@testing-library/jest-dom"
+import { configure } from "@testing-library/react"
+import "../testServer"
 
-configure({ testIdAttribute: 'data-test-id' })
+configure({ testIdAttribute: "data-test-id" })
 
 // re-export everything
-export * from '@testing-library/react'
+export * from "@testing-library/react"
